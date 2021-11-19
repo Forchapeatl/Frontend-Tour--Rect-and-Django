@@ -7,7 +7,7 @@ export default function CartLink(props) {
   const { item } = props;
   return (
     <Link className="Cart" to="/checkout">
-      <FaShoppingCart />
+      <FaCalendar />
       {item && item.name}
     </Link>
   );
