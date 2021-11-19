@@ -21,9 +21,9 @@ export default function Item(props) {
       <p>
         Difficulty Rating: {item.rating}&nbsp;
         <span className={`Item-rating Item-rating__${item.rating}`}>
-          <span>up</span>
-          <span>up</span>
-          <span>up</span>
+          <FaMountain/>
+          <FaMountain/>
+          <FaMountain/>
         </span>
       </p>
       <p>{item.promo}</p>
