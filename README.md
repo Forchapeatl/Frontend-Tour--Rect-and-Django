@@ -1,3 +1,4 @@
+Link to Django backend https://github.com/Forchapeatl/Backend-Tour-Rect-and-Django
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
