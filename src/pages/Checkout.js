@@ -38,7 +38,7 @@ export default class Checkout extends React.Component {
         <section className="Checkout">
           <header className="Checkout-header">
             <h2>Checkout</h2>
-            <h3>Thanks for buying an excursion with Explore California!</h3>
+            <h3>Thanks for buying an excursion with Explore Cameroon!</h3>
           </header>
         </section>
       );
