@@ -6,15 +6,15 @@ import ServiceApi from './services/ServiceApi';
 jest.mock('../src/services/ServiceApi', () => {
   const exampleTourPackage = {
     id: 1,
-    name: 'Taste of California',
-    promo: "Tour of the wine country? Tour of the olive groves? We couldn't decide so we put them together in one of our most amazing tour packages ever. Taste of California immerses you in the serene, romantic lifestyle of the California wine country and olive groves. Along the way you'll experience some of the best cuisine in the world, all made from fresh local ingredients by some of the nation's most renown chefs. Bon Appetit!",
+    name: 'Taste of Cameroon',
+    promo: "Tour of the chocolate country? Tour of the cocoa plantations? We couldn't decide so we put them together in one of our most amazing tour packages ever. Taste of Cameroon immerses you in the serene, romantic lifestyle of the Cameroon wine country and olive groves. Along the way you'll experience some of the best cuisine in the world, all made from fresh local ingredients by some of the nation's most renown chefs. Bon Appetit!",
     rating: 'hard',
     tour_length: 2,
     price: 5000,
-    start: '10/04/2019',
+    start: '10/04/2022',
     departure_dates: [
-      '10/04/2019',
-      '12/04/2019'
+      '10/02/2022',
+      '12/06/2022'
     ]
   };
   return {
