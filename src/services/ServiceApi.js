@@ -16,7 +16,7 @@ export function getAccessToken() {
         client_secret: clientSecret,
         scope: 'read'
       }
-      Axios.post('https://quawnt.herokuapp.com/oauth/token/', data).then((response) => {
+      Axios.post('https://quawntt.herokuapp.com/oauth/token/', data).then((response) => {
         _accessToken = response.data.access_token;
         resolve(_accessToken);
       });
@@ -40,7 +40,7 @@ export default {
   async retrieveWishlist() {
     const config = await getConfig();
     return new Promise((resolve) => {
-      Axios.get('https://quawnt.herokuapp.com/api/v1/wishlist/', config).then((response) => {
+      Axios.get('https://quawntt.herokuapp.com/api/v1/wishlist/', config).then((response) => {
         resolve(response.data);
       });
     });
@@ -49,18 +49,18 @@ export default {
   async wishlistAdd(id) {
     const config = await getConfig();
     const data = { id };
-    return Axios.post('https://quawnt.herokuapp.com/api/v1/wishlist/', data, config);
+    return Axios.post('https://quawntt.herokuapp.com/api/v1/wishlist/', data, config);
   },
 
   async wishlistDelete(itemId) {
     const config = await getConfig();
-    return Axios.delete(`https://quawnt.herokuapp.com/api/v1/wishlist/${itemId}/`, config);
+    return Axios.delete(`https://quawntt.herokuapp.com/api/v1/wishlist/${itemId}/`, config);
   },
 
   async wishlistCartStatus(id, added_to_cart) {
     const config = await getConfig();
     const data = { id, added_to_cart };
-    return Axios.patch(`https://quawnt.herokuapp.com/api/v1/wishlist/${id}/`, data, config);
+    return Axios.patch(`https://quawntt.herokuapp.com/api/v1/wishlist/${id}/`, data, config);
   },
 
   async retrieveDetails(id) {
@@ -77,7 +77,7 @@ export default {
     config['params'] = queryParams;
     config['params']['page'] = pageIndex;
     return new Promise((resolve) => {
-      Axios.get('https://quawnt.herokuapp.com/api/v1/public/packages/', config).then((response) => {
+      Axios.get('https://quawntt.herokuapp.com/api/v1/public/packages/', config).then((response) => {
         resolve(response.data);
       });
     });
@@ -86,7 +86,7 @@ export default {
   async createBooking(data) {
     const config = await getConfig();
     return new Promise((resolve, reject) => {
-      Axios.post('https://quawnt.herokuapp.com/api/v1/bookings/', data, config).then((response) => {
+      Axios.post('https://quawntt.herokuapp.com/api/v1/bookings/', data, config).then((response) => {
         resolve(response.data);
       }).catch((error) => {
         reject(error.response.data);
